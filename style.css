@@ -38,14 +38,18 @@ header nav ul li {
     opacity: 0.9;
     text-align: center;
     background-color: #f4efef;
-    height: 385px;
-    width: 400px;
+    /* height: 385px;
+    width: 400px; */
+    max-width: 500px;;
     margin-top: 25px;
     margin-left: 50px;
     padding: 10px;
     border-radius: 10px;
     border-style: solid;
     border-width: 4px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .profile-pic {
@@ -57,7 +61,11 @@ header nav ul li {
 
 .project-section {
     text-align: center;
-    text-decoration: ;
+    /* text-decoration: ; */
+}
+
+.project-section h2 {
+    margin-top: 40px;
 }
 
 .first-project-container {
@@ -65,12 +73,28 @@ header nav ul li {
     height: 450px;
 }
 
+.first-project-container a {
+    text-decoration: none;
+    margin: auto;
+}
+
 .first-project {
-    margin: 40px;
-    background-color:black;
+    margin: 40px auto;
+    /* background-color:black; */
     height: 400px;
-    width: 700px;
-    margin-left: 410px;
+    width: 825px;
+    background-image: url("./images/run-buddy-pic.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.first-project h3 {
+    position: absolute;
+    bottom: 20px;
+    background-color: white;
+    color: black;
+    padding:8px 16px;
 }
 
 .first-project-pic {
@@ -78,16 +102,19 @@ header nav ul li {
     width: 700px;
 }
 
-.projectcontainer{
+ .projectcontainer{
     display: flex;
-    height: 350px;
-}
+    /* height: 350px; */
+    flex-wrap: wrap;
+    justify-content: center;
+} 
 
-.individualproject{
-    margin: 40px;
-    background-color:black;
-    height: 300px;
-    width: 2000px;
+.projectcontainer img {
+    width: 300px;
+    height: 225px;
+    margin: 20px;
+    justify-items: center;
+
 }
 
 .projectimg {
@@ -99,10 +126,9 @@ header nav ul li {
     background-color: rgba(206, 206, 206, 0.949);
     height: 200px;
     position: relative;
-    height: 200px;
     margin-top: 20px;
     clear: both;
-    background-image: -;
+    /* background-image: -; */
 }
 footer div h2 {
     text-align: center;
